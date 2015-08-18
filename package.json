@@ -1,0 +1,29 @@
+{
+  "name": "euler003",
+  "version": "1.0.0",
+  "description": "Largest prime factor #Problem 3 The prime factors of 13195 are 5, 7, 13 and 29.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msquarednet/euler003.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msquarednet/euler003/issues"
+  },
+  "homepage": "https://github.com/msquarednet/euler003",
+  "devDependencies": {
+    "jasmine": "^2.3.1",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.35",
+    "karma-cli": "0.0.4",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "karma-story-reporter": "^0.3.1",
+    "phantomjs": "^1.9.17"
+  }
+}
