@@ -38,22 +38,43 @@ var Euler005 = {
         // return arr;
         //well, that was dumb...
     },
-    isNumberZeroModFrom1thruX: function(number, x) {    //should skip 1....
+    isNumberZeroModFrom1thruX: function(number, x) {    //should skip 1(?)....
         if (number && x) {
-            if (isNaN(number)) {number=1};  if (isNaN(x)) {x=1};
+            if (isNaN(number)) {number=1};  if (isNaN(x)) {x=1};    //greater than zero?
             for (var i=1; i<=x; i++) {
                 if (number%i===0) {console.log("TRUE: "+number+"%"+i+"===0")}
                 else {
                     console.log("FALSE: "+number+"%"+i+"===0")
-                    break;  return false;
+                    return false;   break;
                 }
             }
             return true;
         } else {return false;}
+    },
+    findSmallestNumberZeroModFrom1thruX: function(x) {    //should skip 1(?)....
+        if (x) {
+            if (isNaN(x)) {x=1};
+            x = Math.abs(x);
+            var worky = false;
+            
+            var number = x;
+            do {
+                worky = Euler005.isNumberZeroModFrom1thruX(number,x);
+                if (worky) {console.log("---------------------------WORKY!!!!!: "+number); return number}
+                else {console.log("------------------NO worky: " + number)};
+                number++;
+            } while (!worky);
+            
+        } else {return 0;}
     }
     
 };
 console.log("FOOBAR!!!!!!!!!!!!!!!!!!!!!");
 
 //console.log(Euler005.getAllFactors(6));
-console.log("is zero-mod for all: " + Euler005.isNumberZeroModFrom1thruX(2520,10));
+//console.log("is zero-mod for all: " + Euler005.isNumberZeroModFrom1thruX(2520,10));
+//console.log("is zero-mod for all: " + Euler005.isNumberZeroModFrom1thruX(232792560,20));
+
+console.log("smallest zero-mod for X is: " + Euler005.findSmallestNumberZeroModFrom1thruX(4));
+// console.log("smallest zero-mod for X is: " + Euler005.findSmallestNumberZeroModFrom1thruX(10));
+
