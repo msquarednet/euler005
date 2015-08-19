@@ -45,7 +45,8 @@ var Euler005 = {
                 if (number%i===0) {console.log("TRUE: "+number+"%"+i+"===0")}
                 else {
                     console.log("FALSE: "+number+"%"+i+"===0")
-                    return false;   break;
+                    return false;   
+                    break;
                 }
             }
             return true;
@@ -75,6 +76,8 @@ console.log("FOOBAR!!!!!!!!!!!!!!!!!!!!!");
 //console.log("is zero-mod for all: " + Euler005.isNumberZeroModFrom1thruX(2520,10));
 //console.log("is zero-mod for all: " + Euler005.isNumberZeroModFrom1thruX(232792560,20));
 
-console.log("smallest zero-mod for X is: " + Euler005.findSmallestNumberZeroModFrom1thruX(4));
-// console.log("smallest zero-mod for X is: " + Euler005.findSmallestNumberZeroModFrom1thruX(10));
+// console.log("smallest zero-mod for 1-"+4+" is: " + Euler005.findSmallestNumberZeroModFrom1thruX(4));
+// console.log("smallest zero-mod for 1-"+10+" is: " + Euler005.findSmallestNumberZeroModFrom1thruX(10));
+console.log("smallest zero-mod for 1-"+11+" is: " + Euler005.findSmallestNumberZeroModFrom1thruX(11));
+// console.log("smallest zero-mod for 1-"+10+" is: " + Euler005.findSmallestNumberZeroModFrom1thruX(10));
 
