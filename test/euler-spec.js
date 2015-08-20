@@ -19,18 +19,19 @@ describe("Euler005", function() {
     //         expect(Euler005.isPrime(12)).toBe(false);
     //     });
     // });
-    
-    describe("Euler005.getFactors", function() {
-        it('exists', function() {
-            expect(Euler005.getFactors).toBeDefined();
-        });
-        it("getFactors() returns empty array", function() {
-            expect(Euler005.getFactors().length).toEqual(0);
-        });
-        it("getFactors(10) returns [1,2,5,10]", function() {
-            expect(Euler005.getFactors(10)).toEqual([1,2,5,10]);
-        });
-    });
+
+//keep this    
+    // describe("Euler005.getFactors", function() {
+    //     it('exists', function() {
+    //         expect(Euler005.getFactors).toBeDefined();
+    //     });
+    //     it("getFactors() returns empty array", function() {
+    //         expect(Euler005.getFactors().length).toEqual(0);
+    //     });
+    //     it("getFactors(10) returns [1,2,5,10]", function() {
+    //         expect(Euler005.getFactors(10)).toEqual([1,2,5,10]);
+    //     });
+    // });
     
     // describe("Euler005.getPrimeFactors", function() {
     //     it('exists', function() {
