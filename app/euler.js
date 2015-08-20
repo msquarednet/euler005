@@ -11,6 +11,11 @@ var Euler005 = {
         factors.sort(function(a, b){return a - b;});  // numeric sort
         return factors;
     },
+    getAllFactors: function(num) {  //from 1 to num
+        var arr = [];
+        for (var i=num; i>0; i--) { arr.push(i); } 
+        return arr;
+    },
     getOptimizedFactors: function(num) {  //from 1 to num
         var arr = [];
         var mainstr, substr;
@@ -26,11 +31,6 @@ var Euler005 = {
                 };
             };             // console.log("arr="+arr);
         }; 
-        return arr;
-    },
-    getAllFactors: function(num) {  //from 1 to num
-        var arr = [];
-        for (var i=num; i>0; i--) { arr.push(i); } 
         return arr;
     },
     isNumberZeroModFrom1thruX: function(number, x) {    //should skip 1(?)....

@@ -20,44 +20,77 @@ describe("Euler005", function() {
     //     });
     // });
 
-//keep this    
-    // describe("Euler005.getFactors", function() {
-    //     it('exists', function() {
-    //         expect(Euler005.getFactors).toBeDefined();
-    //     });
-    //     it("getFactors() returns empty array", function() {
-    //         expect(Euler005.getFactors().length).toEqual(0);
-    //     });
-    //     it("getFactors(10) returns [1,2,5,10]", function() {
-    //         expect(Euler005.getFactors(10)).toEqual([1,2,5,10]);
-    //     });
-    // });
+  
+    describe("Euler005.getFactors", function() {
+        it('exists', function() {
+            expect(Euler005.getFactors).toBeDefined();
+        });
+        it("getFactors() returns empty array", function() {
+            expect(Euler005.getFactors().length).toEqual(0);
+        });
+        it("getFactors(10) returns [1,2,5,10]", function() {
+            expect(Euler005.getFactors(10)).toEqual([1,2,5,10]);
+        });
+    });
     
-    // describe("Euler005.getPrimeFactors", function() {
-    //     it('exists', function() {
-    //         expect(Euler005.getPrimeFactors).toBeDefined();
-    //     });
-    //     it("getPrimeFactors() returns empty array", function() {
-    //         expect(Euler005.getPrimeFactors().length).toEqual(0);
-    //     });
-    //     it("getPrimeFactors([1,2,5,10]) returns [2,5]", function() {
-    //         expect(Euler005.getPrimeFactors([1,2,5,10])).toEqual([2,5]);
-    //     });
-    // });
+    describe("Euler005.getAllFactors", function() {
+        it('exists', function() {
+            expect(Euler005.getAllFactors).toBeDefined();
+        });
+        it("getAllFactors() returns empty array", function() {
+            expect(Euler005.getAllFactors().length).toEqual(0);
+        });
+        it("getAllFactors(10) returns [10,9,8,7,6,5,4,3,2,1]", function() {
+            expect(Euler005.getAllFactors(10)).toEqual([10,9,8,7,6,5,4,3,2,1]);
+        });
+    });
     
-    // describe("Euler005.getLargestPrimeFactor", function() {
-    //     it('exists', function() {
-    //         expect(Euler005.getLargestPrimeFactor).toBeDefined();
-    //     });
-    //     it("getLargestPrimeFactor() returns undefined", function() {
-    //         expect(Euler005.getLargestPrimeFactor()).toEqual(undefined);
-    //     });
-    //     it("getLargestPrimeFactor(10) returns 5", function() {
-    //         expect(Euler005.getLargestPrimeFactor(10)).toEqual(5);
-    //     });
-    //     it("getLargestPrimeFactor(600851475143) returns 6857", function() {
-    //         expect(Euler005.getLargestPrimeFactor(600851475143)).toEqual(6857);
-    //     });
-    // }); 
+    describe("Euler005.getOptimizedFactors", function() {
+        it('exists', function() {
+            expect(Euler005.getOptimizedFactors).toBeDefined();
+        });
+        it("getOptimizedFactors() returns empty array", function() {
+            expect(Euler005.getOptimizedFactors().length).toEqual(0);
+        });
+        it("getOptimizedFactors(10) returns [10,9,8,7,6,5]", function() {
+            expect(Euler005.getOptimizedFactors(10)).toEqual([10,9,8,7,6,5]);
+        });
+    });
+    
+    describe("Euler005.isNumberZeroModFrom1thruX", function() {
+        it('exists', function() {
+            expect(Euler005.isNumberZeroModFrom1thruX).toBeDefined();
+        });
+        it("isNumberZeroModFrom1thruX() returns false", function() {
+            expect(Euler005.isNumberZeroModFrom1thruX()).toBe(false);
+        });
+        it("isNumberZeroModFrom1thruX(1) returns false", function() {
+            expect(Euler005.isNumberZeroModFrom1thruX(1)).toBe(false);
+        });
+        it("isNumberZeroModFrom1thruX(2520,10) returns true", function() {
+            expect(Euler005.isNumberZeroModFrom1thruX(2520,10)).toBe(true);
+        });
+        it("isNumberZeroModFrom1thruX(232792560,20) returns true", function() {
+            expect(Euler005.isNumberZeroModFrom1thruX(232792560,20)).toBe(true);
+        });
+    }); 
+    
+    describe("Euler005.findSmallestNumberZeroModFrom1thruX", function() {
+        it('exists', function() {
+            expect(Euler005.findSmallestNumberZeroModFrom1thruX).toBeDefined();
+        });
+        it("findSmallestNumberZeroModFrom1thruX() returns 0", function() {
+            expect(Euler005.findSmallestNumberZeroModFrom1thruX()).toBe(0);
+        });
+        it("findSmallestNumberZeroModFrom1thruX(1) returns false", function() {
+            expect(Euler005.findSmallestNumberZeroModFrom1thruX(1)).toBe(1);
+        });
+        it("findSmallestNumberZeroModFrom1thruX(10) returns true", function() {
+            expect(Euler005.findSmallestNumberZeroModFrom1thruX(10)).toBe(2520);
+        });
+        it("findSmallestNumberZeroModFrom1thruX(20) returns true", function() {
+            expect(Euler005.findSmallestNumberZeroModFrom1thruX(20)).toBe(232792560);
+        });
+    }); 
     
 });
